@@ -1,0 +1,30 @@
+section.repository-list {
+    margin: 40px;
+
+    h1 {
+        margin-bottom: 16px;
+        background-color: gray;
+        width: 310px;
+    }
+    ul {
+        list-style: none;         // tira as bolinhas da lista
+        li{
+            
+            margin-bottom: 20px;    // espaçamento abaixo do item
+            & + li {                // toda li que tiver uma li antes, o margin-top será 20px
+                margin-top: 20px;   // espaçamento acima do item
+            }
+            p {
+                font-size: 14px;
+                color: #444;
+                margin-top: 8px
+            }
+            a{
+                display: inline-block; //permite colocar magin-top, height etc
+                margin-top: 16px;
+                text-decoration: none;
+                color: #8257e6;
+            }
+        }
+    }
+}
